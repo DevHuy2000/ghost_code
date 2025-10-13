@@ -687,7 +687,7 @@ if __name__ == "__main__":
         print("No accounts file found. Starting without preloaded accounts.")
 
 #    try:
-        app.run(debug=True)
+        app.run(host='0.0.0.0', port=15028, debug=False)
         #app.infinity_polling(logger_level=logging.INFO, timeout=60, long_polling_timeout=30)
     except KeyboardInterrupt:
         print("Server stopped by user")
