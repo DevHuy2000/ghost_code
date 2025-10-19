@@ -468,12 +468,12 @@ class TcpBotConnectMain:
                                 got_0500 = False
                                 attempt_counter = 0
 
-                                while not got_0500 and attempt_counter < 2:
+                                while not got_0500 and attempt_counter < 10:
                                         attempt_counter += 1
                                         print(f"[{self.account_id}] Attempt {attempt_counter} joining/exiting squad {self.id}...")
 
                                         self.socket_client.send(GenJoinSquadsPacket(self.id, self.key, self.iv))
-                                        time.sleep(0.01)
+                                        time.sleep(0.001)
                                         self.socket_client.send(ExiT('000000', self.key, self.iv))
                                         time.sleep(0.0001)
 
@@ -497,9 +497,9 @@ class TcpBotConnectMain:
                                                                 # إرسال Ghost packet مرتين للتأكيد
                                                                 for _ in range(1):
                                                                         self.socket_client.send(ghost_pakcet(idT, self.nm, sq, self.key, self.iv))
-                                                                        time.sleep(0.01)
+                                                                        time.sleep(0.001)
                                                                 self.socket_client.send(ExiT('000000', self.key, self.iv))
-                                                                time.sleep(0.001)
+                                                                time.sleep(0.0001)
                                                                 got_0500 = True
                                                         else:
                                                                 print(f"[{self.account_id}] 0500 packet received but keys missing, skipping parse.")
@@ -638,9 +638,9 @@ def execute_command_all():
 
     #account_id
     ghost_names = {
-        "4215267746": "SexTop1.net",
-        "4215268015": "XNXX.COM",
-        "4215268280": "Live_Biến_Thái"
+        "4234325429": "SexTop1.net",
+        "4234317230": "XNXX.COM",
+        "4234317300": "Live_Biến_Thái"
 }
 
 
