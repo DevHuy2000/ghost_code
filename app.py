@@ -468,7 +468,7 @@ class TcpBotConnectMain:
                                 got_0500 = False
                                 attempt_counter = 0
 
-                                while not got_0500 and attempt_counter < 350:
+                                while not got_0500 and attempt_counter < 5:
                                         attempt_counter += 1
                                         print(f"[{self.account_id}] Attempt {attempt_counter} joining/exiting squad {self.id}...")
 
@@ -636,7 +636,7 @@ def execute_command_all():
         cmd = parts[0]
         arg = parts[1] if len(parts) > 1 else None
 
-    # أسماء الحسابات لكل account_id
+    #account_id
     ghost_names = {
         "4215267746": "SexTop1.net",
         "4215268015": "XNXX.COM",
@@ -648,7 +648,7 @@ def execute_command_all():
     for account_id, client in clients.items():
         account_name = ghost_names.get(str(account_id), str(account_id))
         if cmd == "/bngx" and arg:
-            # تمرير الاسم مع team code
+            #team code
             result = client.execute_command(cmd, arg, account_name)
             results[account_id] = f"{result} | Name: {account_name}"
         else:
