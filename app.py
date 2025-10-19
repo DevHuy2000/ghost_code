@@ -34,7 +34,7 @@ shared_0500_info = {
     'AutH': None
 }
 
-MASTER_ACCOUNT_ID = '4215267746' #Chỉnh sửa theo tài khoản chính của bạn
+MASTER_ACCOUNT_ID = '4234325429' #Chỉnh sửa theo tài khoản chính của bạn
 #MASTER_ACCOUNT_ID = ["4049479419", "4177283741", "4177281825", "4177275473"]
 def AuTo_ResTartinG():
     while not shutting_down:
@@ -468,14 +468,14 @@ class TcpBotConnectMain:
                                 got_0500 = False
                                 attempt_counter = 0
 
-                                while not got_0500 and attempt_counter < 10:
+                                while not got_0500 and attempt_counter < 20:
                                         attempt_counter += 1
                                         print(f"[{self.account_id}] Attempt {attempt_counter} joining/exiting squad {self.id}...")
 
                                         self.socket_client.send(GenJoinSquadsPacket(self.id, self.key, self.iv))
-                                        time.sleep(0.001)
+                                        time.sleep(0.01)
                                         self.socket_client.send(ExiT('000000', self.key, self.iv))
-                                        time.sleep(0.0001)
+                                        time.sleep(0.01)
 
                                         if self.DaTa2 and '0500' in self.DaTa2.hex()[0:4] and len(self.DaTa2.hex()) > 30:
                                                 try:
@@ -492,14 +492,14 @@ class TcpBotConnectMain:
 
                                                                 # تأكد من الخروج قبل إرسال Ghost packet
                                                                 self.socket_client.send(ExiT('000000', self.key, self.iv))
-                                                                time.sleep(0.001)
+                                                                time.sleep(0.01)
 
                                                                 # إرسال Ghost packet مرتين للتأكيد
                                                                 for _ in range(1):
                                                                         self.socket_client.send(ghost_pakcet(idT, self.nm, sq, self.key, self.iv))
-                                                                        time.sleep(0.001)
+                                                                        time.sleep(0.01)
                                                                 self.socket_client.send(ExiT('000000', self.key, self.iv))
-                                                                time.sleep(0.0001)
+                                                                time.sleep(0.01)
                                                                 got_0500 = True
                                                         else:
                                                                 print(f"[{self.account_id}] 0500 packet received but keys missing, skipping parse.")
