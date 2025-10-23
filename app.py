@@ -34,7 +34,7 @@ shared_0500_info = {
     'AutH': None
 }
 
-MASTER_ACCOUNT_ID = '4234325429' #Chỉnh sửa theo tài khoản chính của bạn
+MASTER_ACCOUNT_ID = '4242483845' #Chỉnh sửa theo tài khoản chính của bạn
 #MASTER_ACCOUNT_ID = ["4049479419", "4177283741", "4177281825", "4177275473"]
 def AuTo_ResTartinG():
     while not shutting_down:
@@ -638,9 +638,9 @@ def execute_command_all():
 
     #account_id
     ghost_names = {
-        "4234325429": "SexTop1.net",
-        "4234317230": "XNXX.COM",
-        "4234317300": "Live_Biến_Thái"
+        "4242483845": "SexTop1.net",
+        "4242483943": "XNXX.COM",
+        "4242484026": "Live_Biến_Thái"
 }
 
 
