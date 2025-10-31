@@ -242,7 +242,7 @@ class TcpBotConnectMain:
             'ReleaseVersion': FreeFireVersion,
             'Content-Type': 'application/x-www-form-urlencoded',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 9; G011A Build/PI)',
-            'Host': 'clientbp.common.ggbluefox.com',
+            'Host': 'clientbp.common.ggwhitehawk.com',
             'Connection': 'close',
             'Accept-Encoding': 'gzip, deflate, br',
         }
@@ -292,7 +292,7 @@ class TcpBotConnectMain:
             'X-GA': 'v1 1',
             'Content-Length': '928',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
-            'Host': 'loginbp.common.ggbluefox.com',
+            'Host': 'loginbp.common.ggwhitehawk.com',
             'Connection': 'Keep-Alive',
             'Accept-Encoding': 'gzip'
         }

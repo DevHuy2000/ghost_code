@@ -34,7 +34,7 @@ shared_0500_info = {
     'AutH': None
 }
 
-MASTER_ACCOUNT_ID = '4242483845' #Chỉnh sửa theo tài khoản chính của bạn
+MASTER_ACCOUNT_ID = '4260808645' #Chỉnh sửa theo tài khoản chính của bạn
 #MASTER_ACCOUNT_ID = ["4049479419", "4177283741", "4177281825", "4177275473"]
 def AuTo_ResTartinG():
     while not shutting_down:
@@ -305,16 +305,16 @@ class TcpBotConnectMain:
         return whisper_ip, whisper_port, online_ip, online_port
     
     def GET_LOGIN_DATA(self, JWT_TOKEN, PAYLOAD):
-        url = "https://clientbp.ggblueshark.com/GetLoginData"
+        url = "https://clientbp.ggwhitehawk.com/GetLoginData"
         headers = {
             'Expect': '100-continue',
             'Authorization': f'Bearer {JWT_TOKEN}',
             'X-Unity-Version': '2018.4.11f1',
             'X-GA': 'v1 1',
-            'ReleaseVersion': 'OB50',
+            'ReleaseVersion': 'OB51',
             'Content-Type': 'application/x-www-form-urlencoded',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 9; G011A Build/PI)',
-            'Host': 'clientbp.ggblueshark.com',
+            'Host': 'clientbp.ggwhitehawk.com',
             'Connection': 'close',
             'Accept-Encoding': 'gzip, deflate, br',
         }
@@ -364,7 +364,7 @@ class TcpBotConnectMain:
             'X-GA': 'v1 1',
             'Content-Length': '880',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
-            'Host': 'loginbp.ggblueshark.com',
+            'Host': 'loginbp.ggwhitehawk.com',
             'Connection': 'Keep-Alive',
             'Accept-Encoding': 'gzip'
         }
@@ -638,9 +638,9 @@ def execute_command_all():
 
     #account_id
     ghost_names = {
-        "4242483845": "SexTop1.net",
-        "4242483943": "XNXX.COM",
-        "4242484026": "Live_Biến_Thái"
+        "4260808645": "SexTop1.net"
+        "4260865450": "XNXX.COM",
+        "4260865539": "Live_Biến_Thái"
 }
 
 

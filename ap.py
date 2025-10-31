@@ -240,10 +240,10 @@ class TcpBotConnectMain:
             'Authorization': f'Bearer {JWT_TOKEN}',
             'X-Unity-Version': '2018.4.11f1',
             'X-GA': 'v1 1',
-            'ReleaseVersion': 'OB50',
+            'ReleaseVersion': 'OB51',
             'Content-Type': 'application/x-www-form-urlencoded',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 9; G011A Build/PI)',
-            'Host': 'clientbp.common.ggbluefox.com',
+            'Host': 'clientbp.common.ggwhitehawk.com',
             'Connection': 'close',
             'Accept-Encoding': 'gzip, deflate, br',
         }
@@ -288,12 +288,12 @@ class TcpBotConnectMain:
     def TOKEN_MAKER(self, OLD_ACCESS_TOKEN, NEW_ACCESS_TOKEN, OLD_OPEN_ID, NEW_OPEN_ID, id):
         headers = {
             'X-Unity-Version': '2018.4.11f1',
-            'ReleaseVersion': 'OB50',
+            'ReleaseVersion': 'OB51',
             'Content-Type': 'application/x-www-form-urlencoded',
             'X-GA': 'v1 1',
             'Content-Length': '928',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
-            'Host': 'loginbp.common.ggbluefox.com',
+            'Host': 'clientbp.common.ggwhitehawk.com',
             'Connection': 'Keep-Alive',
             'Accept-Encoding': 'gzip'
         }
